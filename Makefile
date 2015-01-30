@@ -1,2 +1,2 @@
 build:
-	docker build -t="hauptmedia/java:7" .
+	docker build -t="hauptmedia/java:oracle-java7" oracle-java7/
