@@ -1,7 +1,7 @@
 FROM debian:jessie
 MAINTAINER Julian Haupt <julian.haupt@hauptmedia.de>
 
-ENV	DEBIAN_FRONTEND=noninteractive
+ENV	DEBIAN_FRONTEND noninteractive
 
 RUN	echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu precise main" | tee /etc/apt/sources.list.d/webupd8team-java.list && \
 	echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu precise main" | tee -a /etc/apt/sources.list.d/webupd8team-java.list && \
