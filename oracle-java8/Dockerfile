@@ -8,7 +8,7 @@ RUN	echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu precise main" | t
 	apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886 && \
 	apt-get update -qq && \
 	echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | /usr/bin/debconf-set-selections && \
-	apt-get install oracle-java8-installer -y --no-install-recommends && \
+	apt-get install oracle-java8-installer libxext-dev libxrender-dev libxtst-dev -y --no-install-recommends && \
 	apt-get clean autoclean && \
 	apt-get autoremove --yes && \
 	rm -rf /var/lib/{apt,dpkg,cache,log}/ && \
