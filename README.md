@@ -6,7 +6,5 @@ By using this image you agree to the [Oracle Binary Code License Agreement](http
 
 Following tags are available:
 
-`oracle-java7` - Image containing the Oracle JDK7
-
 `oracle-java8` - Image containing the Oracle JDK8
 
