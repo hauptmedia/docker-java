@@ -14,6 +14,10 @@ RUN	echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu precise main" | t
 	rm -rf /var/lib/{apt,dpkg,cache,log}/ && \
  	rm -rf /var/cache/oracle-jdk8-installer
 
+# integrate Unlimited Strength Jurisdiction Policy Files
+ADD	local_policy.jar /usr/lib/jvm/java-8-oracle/jre/lib/security/local_policy.jar
+ADD	US_export_policy.jar /usr/lib/jvm/java-8-oracle/jre/lib/security/US_export_policy.jar
+
 ENV	JAVA_HOME /usr/lib/jvm/java-8-oracle
 
 CMD ["bash"]
